@@ -1,0 +1,130 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: whitesmoke;
+  color: rgb(56, 56, 56);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(38, 60, 97);
+}
+
+h2 {
+  margin-top: 20px;
+  color: rgb(38, 60, 97);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="time"],
+form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dias-semana {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dias-semana label {
+  background: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dias-semana input:checked + label {
+  background: rgb(32, 117, 178);
+  color: white;
+}
+
+button {
+  background: rgb(32, 117, 178);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgb(25, 87, 132);
+}
+
+button:disabled {
+  background: lightgray;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+
+li strong {
+  color: rgb(38, 60, 97);
+}
+
+li button {
+  margin-left: 5px;
+  background: rgb(212, 61, 61);
+  transition: background 0.3s ease;
+}
+
+li button:hover {
+  background: rgb(212, 61, 61);
+}
+
+li button:first-child {
+  background: rgb(232, 232, 39);
+  color: rgb(56, 56, 56);
+}
+
+li button:first-child:hover {
+  background: rgb(205, 199, 13);
+}
